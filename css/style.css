@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(12,auto);
+    margin-left: 13%;
+    margin-right: 13%;
+    overflow: hidden;
+}
+
+nav{
+    margin-top: 15px;
+    grid-row: 1/2;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 25% auto;
+    grid-template-rows: 35px;
+}
+
+.navbar > .title {
+    grid-column: 1/2;
+}
+
+#title{
+    font-size: 30px;
+    color: rgb(168, 40, 8);
+}
+
+.navbar > .images > .icons {
+    float: right;
+    font-size: 30px;
+    color: rgb(168, 40, 8);
+}
+
+.navbar > .images > .icons > i{
+    padding-right: 15px;
+}
+
+.navbar > .images {
+    grid-column: 2/3;
+}
+
+.navbar > .images > img{
+    float: right;
+    height: 100%;
+}
+
+head{
+    grid-row: 2/3;
+}
+
+.header{
+    display: grid;
+    padding-top: 70px;
+    grid-template-columns: 8% 47% 45%;
+    grid-template-rows: auto 500px;
+}
+
+.header > button{
+    grid-row: 1/2;
+    border-radius: 10%;
+    border: none;
+    margin-left: 20px;
+}
+
+.header > button > a{
+    font-size: 20px;
+    color: rgb(179, 32, 6);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10%;
+}
+
+.header > button > a:hover{
+    background-color: rgb(206, 52, 5);
+    color: white;
+}
+
+.head_content{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin-top: 80px;
+}
+
+#heading{
+    font-size: 50px;
+}
+
+.head_img{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    margin: 25px 40px 25px 35px;
+    overflow: hidden;
+}
+
+.head_img > img{
+    width: 100%;
+    height: 100%;
+}
+
+.lines{
+    margin-right: 160px;
+}
+
+.lines > p{
+    font-size: 18px;
+}
+
+.btn{
+    
+    border-radius: 10%;
+    margin-top: 25px;
+    border: none;
+}
+
+#know{
+    background-color: whitesmoke;
+    color: rgb(168, 40, 8);
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+#know > a{
+    text-decoration: none;
+    color: rgb(179, 32, 6);
+}
+
+#know > a:hover{
+    background-color: rgb(206, 52, 5);
+    color: white;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10%;
+}
+
+main{
+    grid-row: 3/4;
+    
+}
+
+main > .main1{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-row: auto;
+}
+
+.iblock_text{
+    border-radius: 5%;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.info_title > p{
+    font-weight: bold;
+}
+
+.iblock_active-case > .iblock_text{
+    background-image: linear-gradient(rgb(233, 85, 85), rgb(250, 142, 142));
+}
+
+.iblock_discharge > .iblock_text{
+    background-image: linear-gradient(rgb(32, 99, 32),rgb(117, 255, 124));
+}
+
+.iblock_deaths > .iblock_text   {
+    background-image: linear-gradient(rgb(87, 246, 252), rgb(209, 242, 250));
+}
+
+.iblock_migrations > .iblock_text{
+    background-image: linear-gradient(rgb(211, 253, 59), rgb(245, 247, 125));
+}
+
+.icount{
+    text-align: center;
+}
+
+.info_label{
+    text-align: center;
+}
+
+main > .main_content{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 30% 70%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+main > .main_content > .transmission{
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+
+main > .main_content > .transmission > h2{
+    font-size: 40px;
+}
+
+main > .main_content > .handshake{
+    margin-top: 50px;
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+main > .main_content > .handshake > img{
+    display: block;
+    margin-left: 40px;
+}
+
+main > .main_content > .transmission_description{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: 60px;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 18px;
+}
+
+
+.main2{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    background-color: rgb(253, 158, 135);
+}
+
+#symptoms_head{
+    grid-row: 1/2;
+}
+
+#symptoms_head > h2{
+    padding-left: 30px;
+    font-size: 40px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.all_symptoms{
+    grid-row: 2/3;
+    margin-bottom: 30px;
+}
+
+.symptoms_images{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: 200px;
+    grid-auto-flow: column;
+    margin-left: 50px;
+    
+}
+
+.symptoms_images > img{
+    grid-column: 0/5;
+    width: 80%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.main3{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: auto auto;
+    margin-top: 40px;
+}
+
+.main3 > .prevent_head{
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+
+.main3 > .prevent_head > h2{
+    font-size: 40px;
+    padding-left: 20px;
+}
+
+.main3 > img{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.main3 > img{
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+}
+
+.main3 > #prevention_description{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    padding-top: 120px;
+    padding-left: 40px;
+}
+
+.main3 > #prevention_description > ul > li{
+    font-size: 20px;
+}
+
+.main4{
+    display: grid;
+    grid-template-rows: auto auto;
+    margin-top: 30px;
+    margin-bottom: 30PX;
+}
+
+.main4 > img{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30PX;
+    width: 50%;
+}
+
+.main4 > h2{
+    font-size: 40px;
+}
+
+footer{
+    background-color: tomato;
+}
+
+footer > p{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+
+.home_btn{
+    border: none;
+    background-color: black ;
+}
+
+
+
